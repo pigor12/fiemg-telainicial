@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Outfit&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}
+
+.bg-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://w.wallhaven.cc/full/wy/wallhaven-wyx26x.jpg');
+    background-size: cover;
+    filter:brightness(50%);
+    z-index: -1;
+}
+
+.office-links {
+    position: absolute;
+    top: 2em;
+    left: 2em;
+    display: flex;
+    gap: 1em;
+}
+
+.office-link {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    gap: 0.5em;
+    position: relative;
+    transition: color 0.5s;
+}
+
+.office-link:hover {
+    color: #ff9900;
+}
+
+.links-fiemg {
+    position: absolute;
+    top: 2em;
+    right: 2em;
+    display: flex;
+    gap: 1em;
+}
+
+.links-internos {
+    position: absolute;
+    bottom: 2em;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+}
+
+.links-internos a {
+    text-align: center;
+}
+
+.link-fiemg {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.link-fiemg::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: width 0.3s;
+}
+
+.link-fiemg:hover {
+    color: #004c9b;
+}
+
+.link-fiemg:hover::after {
+    width: 100%;
+}
+
+.barra-pesquisa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    border-radius: 4em;
+}
+
+#input-pesquisa {
+    width: 30%;
+    padding: 1em;
+    font-size: 14px;
+    border: none;
+    border-radius: 4em;
+    color: #292929;
+    background: #ebebeb;
+}
+
+@media(prefers-color-scheme: dark) {
+    #input-pesquisa {
+        width: 30%;
+        padding: 1em;
+        font-size: 14px;
+        border: none;
+        border-radius: 4em;
+        color: #fff;
+        background: #292929;
+    }
+}
+
+::placeholder {
+    text-align: center;
+}
+
+#botao-pesquisa {
+    background: black;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline: none;
+    color: #0c0101;
+    font-size: 20px;
+}
+
+#botao-pesquisa:hover {
+    color: #333;
+}
